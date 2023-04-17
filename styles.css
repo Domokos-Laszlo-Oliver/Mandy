@@ -1,16 +1,38 @@
+/* GLOBAL STYLES
+-------------------------------------------------- */
+/* Padding below the footer and lighter body text */
+
 * {
-    margin: 0;
-    border: 0;
-    padding: 0;
-    outline: 0;
+  border: 0;
+  padding: 0;
+  margin: 0;
+  outline: 0;
 }
 
-main {
-    display: flex;
-    flex-direction: column;
-    margin-top: 6%;
 
+
+body {
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+  /* color: rgb(var(--bs-tertiary-color-rgb)); */
+  background-color: red;
 }
 
-#myCarousel {
+
+/* CUSTOMIZE THE CAROUSEL
+-------------------------------------------------- */
+
+/* Carousel base class */
+.carousel {
+  margin-bottom: 4rem;
+}
+/* Since positioning the image, we need to help out the caption */
+.carousel-caption {
+  bottom: 3rem;
+  z-index: 10;
+}
+
+/* Declare heights because of positioning of img element */
+.carousel-item {
+  height: 32rem;
 }

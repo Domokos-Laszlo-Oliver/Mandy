@@ -1,6 +1,5 @@
 /* GLOBAL */
 
-
 * {
   border: 0;
   padding: 0;
@@ -9,16 +8,27 @@
 }
 
 
-
-body {
-  padding-top: 3rem;
-  padding-bottom: 3rem;
-  background-color: red;
+@font-face {
+  font-family: Ballet;
+  src: url("Fonts/Ballet/Ballet-Regular-VariableFont_opsz.ttf") format("truetype");
 }
 
+@font-face {
+  font-family: Dancing_Script;
+  src: url("Fonts/Dancing_Script/DancingScript-VariableFont_wght.ttf") format("truetype");
+}
 
+@font-face {
+  font-family: Mea_Culpa;
+  src: url("Fonts/Mea_Culpa/MeaCulpa-Regular.ttf") format("truetype");
+}
 
-
+body {
+  background-image: linear-gradient( 173.1deg,  rgba(226,66,249,0.94) 10.2%, rgba(79,147,249,1) 77.3% );
+  font-family: 'Dancing_Script', sans-serif;
+  padding-top: 3rem;
+  padding-bottom: 3rem;
+}
 
 
 /*CAROUSEL*/
@@ -27,28 +37,23 @@ body {
 /* Carousel base class */
 
 .carousel {
-  margin-bottom: 4rem;
-}
 
-/* Since positioning the image, we need to help out the caption */
-.carousel-caption {
-  bottom: 3rem;
-  z-index: 10;
 }
 
 /* Declare heights because of positioning of img element */
 .carousel-item {
-  height: 32rem;
+  height: 41rem;      /* 32 */
 }
+
+
+/* ABOUT */
 
 #About_Outer {
   display: flex;
   flex-direction: column;
   align-items: center;
   border: 1px solid black;
-  margin-left: 10px;
-  margin-right: 10px;
-  padding: 10px;
+  margin: 1%;
 }
 
 #About_Inner {
@@ -65,18 +70,46 @@ body {
   max-width: 20%;
   max-height: 20%;
   border-radius: 200%;
+  margin-bottom: 10%;
 }
 
 #About_Inner p {
   width: 20%;
 }
 
+/* ABOUT */
 
+/* SERVICES */
 
+#SERVICES {
+  outline: 5px solid black;
+  margin: 1%;
 
+}
 
+/* SERVICES */
 
+/* PRICES */
 
+#PRICES {
+  outline: 5px solid black;
+  margin: 1%;
+}
+
+/* PRICES */
+
+/* CONTACT */
+
+#CONTACT{
+  outline: 5px solid black;
+  margin: 1%;
+}
+
+.form-group {
+  margin-bottom: 2%;
+}
+
+/* CONTACT */
 
 
 
